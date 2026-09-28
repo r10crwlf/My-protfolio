@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dev & Creative Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-blue-400">Portfolio<span class="text-white">.dev</span></a>
+            <nav class="hidden md:flex gap-8 text-sm text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-3xl text-center">
+            <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full border border-blue-500/20">BTS IT Student & Creator</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-6 tracking-tight">Hi, I'm a <span class="text-blue-400">Developer & Creator</span></h1>
+            <p class="text-slate-400 mt-4 text-lg md:text-xl">Building web/mobile apps, editing dynamic videos, and crafting unique brand identities.</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-blue-600/30">View Projects</a>
+                <a href="#contact" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-medium px-6 py-3 rounded-xl transition">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-blue-500 pl-4">About Me</h2>
+        <p class="text-slate-300 leading-relaxed text-base md:text-lg">
+            I am an IT student specializing in Web and Mobile Development. Beyond coding, I have a strong passion for multimedia creation, allowing me to combine technical development skills with video editing and logo/UI design.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-4">Skills & Tools</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-center"><i class="fa-brands fa-js text-yellow-400 text-3xl mb-2"></i><p class="font-medium">JavaScript / PHP</p></div>
+            <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-center"><i class="fa-brands fa-java text-red-500 text-3xl mb-2"></i><p class="font-medium">Java (OOP)</p></div>
+            <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-center"><i class="fa-solid fa-video text-purple-400 text-3xl mb-2"></i><p class="font-medium">Video Editing</p></div>
+            <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-center"><i class="fa-solid fa-pen-nib text-cyan-400 text-3xl mb-2"></i><p class="font-medium">Logo & UI Design</p></div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 border-l-4 border-blue-500 pl-4">Featured Work</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">BIBLIO App</h3>
+                    <p class="text-slate-400 text-sm mb-4">Object-oriented library management system built with clean Java classes and structured methods.</p>
+                </div>
+                <div class="flex gap-2 text-xs font-semibold">
+                    <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Java</span>
+                    <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">OOP</span>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">Brand Identity & Logos</h3>
+                    <p class="text-slate-400 text-sm mb-4">Creative logo concepts, visual identities, and UI mockups designed for modern projects.</p>
+                </div>
+                <div class="flex gap-2 text-xs font-semibold">
+                    <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Adobe XD</span>
+                    <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Let's Work Together</h2>
+        <p class="text-slate-400 mb-6">Got a project, video edit, or design in mind? Reach out and let's talk.</p>
+        <a href="mailto:your-email@example.com" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-medium px-8 py-3 rounded-xl transition shadow-lg shadow-blue-600/30">Send an Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-slate-600 border-t border-slate-900">
+        <p>© 2026 - Built with passion.</p>
+    </footer>
+
+</body>
+</html>
